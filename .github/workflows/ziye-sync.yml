@@ -1,8 +1,9 @@
 ##  ziye 
-## github地址 https://github.com/6Svip120apk69
-## TG频道地址  https://t.me/ziyescript
-## TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-## boxjs链接  https://raw.githubusercontent.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE/main/Task/ziye.boxjs.json
+## github地址 https://github.com/ziye888
+##TG频道地址  https://t.me/ziyescript
+##TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
+##boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs.json
+##圈X task订阅 https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye-gallery.json
 
 
 ## 新建一个库，此文件路径为 .github/workflows/ziye-sync.yml 打开教程链接 https://www.jianshu.com/p/bb82b3ad1d11 ，申请PAT（勾选时尽量全部勾选 ），找到Settings------secrets------New repository secret------name填写PAT    value填写PAT的值        
@@ -27,7 +28,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-6Svip120apk69-gitee_q8qsTAUA_cThxc1RBVUE
+    types: sync-ziye888-JavaScript
 jobs:
   repo-sync:
     env:
@@ -39,11 +40,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync 6Svip120apk69-gitee_q8qsTAUA_cThxc1RBVUE
+      - name: sync ziye888-JavaScript
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE.git"
+          source_repo: "https://github.com/ziye888/JavaScript.git"
           source_branch: "main"
           destination_branch: "ZIYE"
           github_token: ${{ secrets.PAT }}
