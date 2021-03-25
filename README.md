@@ -7,7 +7,9 @@
 
 [CenBoMin](https://github.com/CenBoMin/GithubSync)(腾讯自选股股)
 
-[ZhiYi](https://github.com/ZhiYi-N/Private-Script)
+[ZhiYi](https://github.com/ZhiYi-N/Private-Script)(ranlv
+
+)
 
 [ztxtop](https://github.com/ztxtop/x)(youth多账号）
 
