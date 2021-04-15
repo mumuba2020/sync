@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-ztxtop
+    types: sync-ztxtop-x
 jobs:
   repo-sync:
     env:
@@ -18,7 +18,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync ztxtop
+      - name: sync ztxtop-x
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
