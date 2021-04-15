@@ -1,4 +1,4 @@
-name: ztxtop-x-sync
+name: ztxtop-sync
 on:
   schedule:
     - cron: '1 */3 * * *'
@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-ztxtop-x
+    types: sync-ztxtop
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync ztxtop-x
+      - name: sync ztxtop
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
           source_repo: "https://github.com/ztxtop/x.git"
           source_branch: "main"
-          destination_branch: "ztxtop-x"
+          destination_branch: "ztxtop"
           github_token: ${{ secrets.PAT }}
