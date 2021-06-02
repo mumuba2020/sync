@@ -7,17 +7,17 @@
 
 [task_local]
 #主会场红包雨
-1 20 1-18 6 * https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js, tag=618主会场红包雨, enabled=true
+5 20 1-18 6 * https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js, tag=618主会场红包雨, enabled=true
 
  ================Loon==============
 [Script]
-cron "1 20 1-18 6 *" script-path=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js,tag=618主会场红包雨
+cron "5 20 1-18 6 *" script-path=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js,tag=618主会场红包雨
 
  ===============Surge=================
-618主会场红包雨 = type=cron,cronexp="1 20 1-18 6 *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js
+618主会场红包雨 = type=cron,cronexp="5 20 1-18 6 *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js
 
  ============小火箭=========
-618主会场红包雨= type=cron,script-path=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js, cronexpr="1 20 1-18 6 *",timeout=200, enable=true
+618主会场红包雨= type=cron,script-path=https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/long_hby_lottery.js, cronexpr="5 20 1-18 6 *",timeout=200, enable=true
  */
 const $ = new Env('618主会场红包雨');
 //Node.js用户请在jdCookie.js处填写京东ck;
