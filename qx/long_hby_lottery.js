@@ -88,6 +88,8 @@ const JD_API_HOST = 'https://api.m.jd.com';
     }
     if ($.isNode() && allMessage) {
         await notify.sendNotify(`${$.name}`, `${allMessage}` )
+    } else {
+        $.msg($.name, '', allMessage);
     }
 })()
     .catch((e) => {
